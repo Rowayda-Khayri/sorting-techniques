@@ -17,17 +17,15 @@ public class SortingTechniques {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        System.out.println("Hello Java :)");
+        //create object to use mehods in class 
+        DataGenerator dg = new DataGenerator();
         
-         DataGenerator d = new DataGenerator();
-        
-        String[] data = new String[1500];
-        data = d.generateRandomData();
+        String[] randomData = new String[1500];
+        randomData = dg.generateRandomData();
         
         String fileName = "randomData";
-        d.SaveDataToFile(data , fileName);
+        dg.SaveDataToFile(randomData , fileName);
         
         
         
