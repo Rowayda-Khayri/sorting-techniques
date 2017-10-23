@@ -26,6 +26,9 @@ public class SortingTechniques {
         String[] data = new String[1500];
         data = d.generateRandomData();
         
+        String fileName = "randomData";
+        d.SaveDataToFile(data , fileName);
+        
         
         
     }

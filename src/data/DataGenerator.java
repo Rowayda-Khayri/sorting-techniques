@@ -45,10 +45,10 @@ public class DataGenerator {
     } 
     
     
-    public void SaveDataToFile(String[] data){
+    public void SaveDataToFile(String[] data, String fileName){
         
         // The name of the file to open.
-        String fileName = "temp.txt";
+        fileName = fileName + ".txt";
         
         char delimiter = ',';
 
@@ -62,8 +62,6 @@ public class DataGenerator {
             BufferedWriter bufferedWriter =
                 new BufferedWriter(fileWriter);
 
-            // Note that write() does not automatically
-            // append a newline character.
             
             for(int i = 0;i<data.length;i++){
                 
@@ -80,14 +78,12 @@ public class DataGenerator {
             System.out.println(
                 "Error writing to file '"
                 + fileName + "'");
-            // Or we could just do this:
-            // ex.printStackTrace();
+            
         }
     
         
         
     }
-    
     
     
 }
