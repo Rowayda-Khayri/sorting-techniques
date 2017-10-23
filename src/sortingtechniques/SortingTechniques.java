@@ -5,6 +5,8 @@
  */
 package sortingtechniques;
 
+import data.*;
+
 /**
  *
  * @author row
@@ -18,6 +20,14 @@ public class SortingTechniques {
         // TODO code application logic here
         
         System.out.println("Hello Java :)");
+        
+         DataGenerator d = new DataGenerator();
+        
+        String[] data = new String[1500];
+        data = d.generateRandomData();
+        
+        
+        
     }
     
 }
