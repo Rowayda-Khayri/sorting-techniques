@@ -17,37 +17,48 @@ import java.util.*;
 public class DataGenerator {
     
     
-    public String[] generateRandomData(){
+//    public String[] generateRandomData(){
+    public Integer[] generateRandomData(){
         
         int counter ;
         Random randomnum = new Random();
         
         //declare string obj to accept any data type
-        String[] generatedData = new String[1500];
+//        String[] generatedData = new String[1500];
+        Integer[] generatedData = new Integer[1500];
         
         //generate 1500 random numbers between 0 and 9999
         for (counter = 0; counter < 1500; counter++) {
             
             int rand  = randomnum.nextInt(9999);
         
-            //convert int to string to be stored in string array 
-            String convertedInt = new String();
-            convertedInt = Integer.toString(rand);
-            generatedData[counter]  = convertedInt;
+            generatedData[counter]  = rand;
 
         }
+        
+        Arrays.sort(generatedData);
+//
 //        System.out.println(generatedData.length); //1500
+//        System.out.println(Arrays.toString(generatedData)); //1500
+
+        Collections.reverse(Arrays.asList(generatedData));
+        
+//        System.out.println(Arrays.toString(generatedData));
+        
+//        String m  = Arrays.toString(generatedData);
 
        return generatedData; 
 
     } 
     
-    public void SaveDataToFile(String[] data, String fileName){
+    public void SaveDataToFile(Integer[] data, String fileName){
         
         // The name of the file to create
         fileName = fileName + ".txt";
         
-        char delimiter = ',';
+        String delimiter = new String();
+        
+        delimiter = ",";
 
         //save to file
         try {
@@ -81,29 +92,33 @@ public class DataGenerator {
         
     }
     
-    public String[] sortData(String[] data){
+    public Integer[] sortData(Integer[] data){
         
         int dataSize = data.length;
         
-        String[] sortedData = new String[dataSize] ;
+        Integer[] sortedData = new Integer[dataSize] ;
         
+        //sort data
+        Arrays.sort(data);
+      
         sortedData = data;
-        
-        Arrays.sort(sortedData);
         
         return sortedData;
     }
     
-    public String[] inverselySortData(String[] data){
+    public Integer[] inverselySortData(Integer[] data){
         
         int dataSize = data.length;
         
-        String[] inverselySortedData = new String[dataSize] ;
+        Integer[] inverselySortedData = new Integer[dataSize] ;
         
         inverselySortedData = data;
+//        Collections.reverse(Arrays.asList(inverselySortedData));
         
-        Arrays.sort(inverselySortedData);
+        Collections.reverse(Arrays.asList(inverselySortedData));
+//        Arrays.sort(inverselySortedData, Collections.reverseOrder());
         
+        System.out.println(inverselySortedData);
         return inverselySortedData;
     }
     

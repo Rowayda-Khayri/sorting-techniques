@@ -25,7 +25,8 @@ public class SortingTechniques {
         int dataSize = 1500;
         
         //create int array to cintain returned random data
-        String[] randomData = new String[dataSize];
+//        String[] randomData = new String[dataSize];
+        Integer[] randomData = new Integer[dataSize];
         randomData = dg.generateRandomData();
         
         //save randomData to file
@@ -33,7 +34,7 @@ public class SortingTechniques {
         dg.SaveDataToFile(randomData , fileName);
         
         //sort the random data
-        String[] sortedData = new String[dataSize];
+        Integer[] sortedData = new Integer[dataSize];
         sortedData = dg.sortData(randomData);
         
         //save sortedData to file
@@ -41,8 +42,8 @@ public class SortingTechniques {
         dg.SaveDataToFile(sortedData , fileName);
         
         //inversely sort the random data
-        String[] inverselySortedData = new String[dataSize];
-        inverselySortedData = dg.sortData(randomData);
+        Integer[] inverselySortedData = new Integer[dataSize];
+        inverselySortedData = dg.inverselySortData(randomData);
         
         //save sortedData to file
         fileName = "inverselySortedData";
