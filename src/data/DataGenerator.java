@@ -23,11 +23,9 @@ public class DataGenerator {
         Random randomnum = new Random();
         
         //declare string obj to accept any data type
-        
         String[] generatedData = new String[1500];
         
         //generate 1500 random numbers between 0 and 9999
-        
         for (counter = 0; counter < 1500; counter++) {
             
             int rand  = randomnum.nextInt(9999);
@@ -38,7 +36,7 @@ public class DataGenerator {
             generatedData[counter]  = convertedInt;
 
         }
-        System.out.println(generatedData.length); //1500
+//        System.out.println(generatedData.length); //1500
 
        return generatedData; 
 
@@ -65,7 +63,6 @@ public class DataGenerator {
             for(int i = 0;i<data.length;i++){
                 
                 //write value 
-                
                 bufferedWriter.write(data[i] + delimiter);
             }
             
@@ -87,17 +84,27 @@ public class DataGenerator {
     public String[] sortData(String[] data){
         
         int dataSize = data.length;
+        
         String[] sortedData = new String[dataSize] ;
         
         sortedData = data;
         
         Arrays.sort(sortedData);
         
-//        Arrays.toString(sortedData);
-//        System.out.println(Arrays.toString(sortedData));
-//        System.out.println(sortedData);
-        
         return sortedData;
+    }
+    
+    public String[] inverselySortData(String[] data){
+        
+        int dataSize = data.length;
+        
+        String[] inverselySortedData = new String[dataSize] ;
+        
+        inverselySortedData = data;
+        
+        Arrays.sort(inverselySortedData);
+        
+        return inverselySortedData;
     }
     
     

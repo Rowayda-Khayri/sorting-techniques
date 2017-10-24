@@ -23,23 +23,21 @@ public class SortingTechniques {
         DataGenerator dg = new DataGenerator();
         
         int dataSize = 1500;
+        
         //create int array to cintain returned random data
         String[] randomData = new String[dataSize];
-        
         randomData = dg.generateRandomData();
         
-        String fileName = "randomData";
         //save randomData to file
+        String fileName = "randomData";
         dg.SaveDataToFile(randomData , fileName);
         
-        String[] sortedData = new String[dataSize];
-        
         //sort the random data
+        String[] sortedData = new String[dataSize];
         sortedData = dg.sortData(randomData);
         
-        fileName = "sortedData";
-        
         //save sortedData to file
+        fileName = "sortedData";
         dg.SaveDataToFile(sortedData , fileName);
         
         
