@@ -38,16 +38,15 @@ public class DataGenerator {
             generatedData[counter]  = convertedInt;
 
         }
-//        System.out.println(generatedData.length); //1500
+        System.out.println(generatedData.length); //1500
 
        return generatedData; 
 
     } 
     
-    
     public void SaveDataToFile(String[] data, String fileName){
         
-        // The name of the file to open.
+        // The name of the file to create
         fileName = fileName + ".txt";
         
         char delimiter = ',';
@@ -58,7 +57,7 @@ public class DataGenerator {
             FileWriter fileWriter =
                 new FileWriter(fileName);
 
-            // Always wrap FileWriter in BufferedWriter.
+            //  wrap FileWriter in BufferedWriter
             BufferedWriter bufferedWriter =
                 new BufferedWriter(fileWriter);
 
@@ -83,6 +82,22 @@ public class DataGenerator {
     
         
         
+    }
+    
+    public String[] sortData(String[] data){
+        
+        int dataSize = data.length;
+        String[] sortedData = new String[dataSize] ;
+        
+        sortedData = data;
+        
+        Arrays.sort(sortedData);
+        
+//        Arrays.toString(sortedData);
+//        System.out.println(Arrays.toString(sortedData));
+//        System.out.println(sortedData);
+        
+        return sortedData;
     }
     
     
