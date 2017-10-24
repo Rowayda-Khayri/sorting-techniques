@@ -40,6 +40,14 @@ public class SortingTechniques {
         fileName = "sortedData";
         dg.SaveDataToFile(sortedData , fileName);
         
+        //inversely sort the random data
+        String[] inverselySortedData = new String[dataSize];
+        inverselySortedData = dg.sortData(randomData);
+        
+        //save sortedData to file
+        fileName = "inverselySortedData";
+        dg.SaveDataToFile(inverselySortedData , fileName);
+        
         
         
     }
