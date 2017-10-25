@@ -29,6 +29,8 @@ public class SortingTechniques {
         Integer[] randomData = new Integer[dataSize];
         randomData = dg.generateRandomData();
         
+        System.out.println(Arrays.toString(randomData));
+        
         //save randomData to file
         String fileName = "randomData";
         dg.SaveDataToFile(randomData , fileName);
@@ -49,6 +51,10 @@ public class SortingTechniques {
         fileName = "inverselySortedData";
         dg.SaveDataToFile(inverselySortedData , fileName);
         
+        LinearSort l = new LinearSort();
+        
+        System.out.println(Arrays.toString(randomData));
+        l.linearSort(randomData);
         
         
         
