@@ -5,6 +5,7 @@
  */
 package data;
 import java.io.*;
+import java.util.*;
 
 /**
  *
@@ -14,8 +15,8 @@ public class ReadData {
     
     public Integer[] readData(String fileName){
         
-        Integer[] data = new Integer[1500]; // to be changed 
-        
+//        Integer[] data = new Integer[1500]; // to be changed 
+        ArrayList<Integer> data = new ArrayList<Integer>();
         
         // The name of the file to open.
         fileName = fileName + ".txt";
@@ -34,7 +35,7 @@ public class ReadData {
 
             while((line = bufferedReader.readLine()) != null) {
                 
-                
+                data = append(data, line);
                 System.out.println(line);
             }   
 
