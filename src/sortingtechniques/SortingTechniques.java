@@ -29,7 +29,7 @@ public class SortingTechniques {
         Integer[] randomData = new Integer[dataSize];
         randomData = dg.generateRandomData();
         
-        System.out.println(Arrays.toString(randomData));
+//        System.out.println(Arrays.toString(randomData));
         
         //save randomData to file
         String fileName = "randomData";
@@ -51,10 +51,23 @@ public class SortingTechniques {
         fileName = "inverselySortedData";
         dg.SaveDataToFile(inverselySortedData , fileName);
         
-        LinearSort l = new LinearSort();
+        //read random data from file 
         
-        System.out.println(Arrays.toString(randomData));
-        l.linearSort(randomData);
+        Integer[] randomD =  new Integer[dataSize];
+        
+        ReadData read = new ReadData();
+        
+        fileName = "randomData";
+        randomD = read.readData(fileName);
+        
+//        System.out.println(Arrays.toString(randomD));
+//        System.out.println(randomD);
+        
+        
+//        LinearSort l = new LinearSort();
+//        
+//        System.out.println(Arrays.toString(randomData));
+//        l.linearSort(randomData);
         
         
         

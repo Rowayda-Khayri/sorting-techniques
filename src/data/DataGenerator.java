@@ -45,7 +45,7 @@ public class DataGenerator {
         
         String delimiter = new String();
         
-        delimiter = ",";
+        delimiter = "\n";
 
         //save to file
         try {
