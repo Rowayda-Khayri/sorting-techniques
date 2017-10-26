@@ -79,7 +79,7 @@ public class SortingTechniques {
                                             //isn't java pass by copy ??!
         System.out.println("linearSortedD" + linearSortedD);
         
-        // sort random data with linear sort
+        // sort random data with bubble sort
         
         BubbleSort b = new BubbleSort();
         
@@ -88,6 +88,24 @@ public class SortingTechniques {
         bubbleSortedD = b.bubbleSort(randomD);
         
         System.out.println("bubbleSortedD" + bubbleSortedD);
+        
+        // sort random data with quick sort
+        
+        QuickSort q = new QuickSort();
+        
+        ArrayList<Integer> quickSortedD = new ArrayList<Integer>();
+        
+        int low = 0;
+//        System.out.println(randomD.size());
+        int high = (randomD.size()) -1 ;
+        
+        System.out.println("high :  " + high);
+        
+//        quickSortedD = q.quickSort(randomD ,low, high); // low is the first element and high is the last element in the arraylist
+        
+        System.out.println("quickSortedD" + quickSortedD);
+        
+        
         
         
     }
