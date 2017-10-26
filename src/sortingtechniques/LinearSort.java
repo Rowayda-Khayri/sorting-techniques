@@ -47,7 +47,11 @@ public class LinearSort {
         
         // Invariant: for all i <= outer, if i < j then a[i] <= a[j] 
         }        
-        System.out.println(data);
+//        System.out.println(data);
+
+//        System.out.println(sortedData);
+
+        sortedData = data;
         
         return sortedData;
     }

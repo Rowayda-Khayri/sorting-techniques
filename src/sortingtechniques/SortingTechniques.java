@@ -67,8 +67,12 @@ public class SortingTechniques {
         LinearSort l = new LinearSort();
 //        
 //        System.out.println(Arrays.toString(randomData));
-        l.linearSort(randomD);
+        ArrayList<Integer> sortedD = new ArrayList<Integer>();
+        sortedD = l.linearSort(randomD);
         
+//        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
+                                            //isn't java pass by copy ??!
+        System.out.println(sortedD);
         
         
     }
