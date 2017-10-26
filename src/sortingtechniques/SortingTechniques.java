@@ -51,7 +51,11 @@ public class SortingTechniques {
         fileName = "inverselySortedData";
         dg.SaveDataToFile(inverselySortedData , fileName);
         
+        
+        
         //read random data from file 
+        
+        
         
         ArrayList<Integer> randomD =  new ArrayList<Integer>();
         
@@ -60,19 +64,30 @@ public class SortingTechniques {
         fileName = "randomData";
         randomD = read.readData(fileName);
         
-//        System.out.println(Arrays.toString(randomD));
-        System.out.println(randomD);
+        System.out.println("randomD" + randomD);
         
+        
+        // sort random data with linear sort
         
         LinearSort l = new LinearSort();
-//        
-//        System.out.println(Arrays.toString(randomData));
-        ArrayList<Integer> sortedD = new ArrayList<Integer>();
-        sortedD = l.linearSort(randomD);
+        
+        ArrayList<Integer> linearSortedD = new ArrayList<Integer>();
+        
+        linearSortedD = l.linearSort(randomD);
         
 //        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
                                             //isn't java pass by copy ??!
-        System.out.println(sortedD);
+        System.out.println("linearSortedD" + linearSortedD);
+        
+        // sort random data with linear sort
+        
+        BubbleSort b = new BubbleSort();
+        
+        ArrayList<Integer> bubbleSortedD = new ArrayList<Integer>();
+        
+        bubbleSortedD = b.bubbleSort(randomD);
+        
+        System.out.println("bubbleSortedD" + bubbleSortedD);
         
         
     }

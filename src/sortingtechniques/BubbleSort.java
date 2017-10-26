@@ -17,6 +17,8 @@ public class BubbleSort {
            
         int dataSize = data.size();
         
+        ArrayList<Integer> sortedData = new ArrayList<Integer>();
+        
         for(int pass = 0 ; pass< dataSize; pass++){
             
             for(int i = 0;i <dataSize -1; i++){
@@ -32,7 +34,8 @@ public class BubbleSort {
             }
         }
         
-        return 
+        sortedData = data;
+        return sortedData;
     }
     
     
