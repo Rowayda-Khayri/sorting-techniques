@@ -53,7 +53,7 @@ public class SortingTechniques {
         
         //read random data from file 
         
-        Integer[] randomD =  new Integer[dataSize];
+        ArrayList<Integer> randomD =  new ArrayList<Integer>();
         
         ReadData read = new ReadData();
         
@@ -61,7 +61,7 @@ public class SortingTechniques {
         randomD = read.readData(fileName);
         
 //        System.out.println(Arrays.toString(randomD));
-//        System.out.println(randomD);
+        System.out.println(randomD);
         
         
 //        LinearSort l = new LinearSort();

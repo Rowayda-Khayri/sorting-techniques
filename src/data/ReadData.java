@@ -13,16 +13,15 @@ import java.util.*;
  */
 public class ReadData {
     
-    public Integer[] readData(String fileName){
+    public ArrayList<Integer> readData(String fileName){
         
-//        Integer[] data = new Integer[1500]; // to be changed 
         ArrayList<Integer> data = new ArrayList<Integer>();
         
         // The name of the file to open.
         fileName = fileName + ".txt";
 
         // This will reference one line at a time
-        String line = null;
+        String line = null ;
 
         try {
             // FileReader reads text files in the default encoding.
@@ -35,8 +34,9 @@ public class ReadData {
 
             while((line = bufferedReader.readLine()) != null) {
                 
-                data = append(data, line);
-                System.out.println(line);
+//                data = append(data, line);
+                data.add(Integer.parseInt(line));
+//                System.out.println(line);
             }   
 
             // Always close files.
