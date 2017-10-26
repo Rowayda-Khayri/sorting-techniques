@@ -47,7 +47,7 @@ public class SortingTechniques {
         Integer[] inverselySortedData = new Integer[dataSize];
         inverselySortedData = dg.inverselySortData(randomData);
         
-        //save sortedData to file
+        //save inverselySortedData to file
         fileName = "inverselySortedData";
         dg.SaveDataToFile(inverselySortedData , fileName);
         
@@ -64,10 +64,10 @@ public class SortingTechniques {
         System.out.println(randomD);
         
         
-//        LinearSort l = new LinearSort();
+        LinearSort l = new LinearSort();
 //        
 //        System.out.println(Arrays.toString(randomData));
-//        l.linearSort(randomData);
+        l.linearSort(randomD);
         
         
         
