@@ -24,20 +24,24 @@ public class SortingTechniques {
         
         int dataSize = 1500;
         
-        //create int array to cintain returned random data
-//        String[] randomData = new String[dataSize];
+        //create int array to contain returned random data
         Integer[] randomData = new Integer[dataSize];
         randomData = dg.generateRandomData();
         
-//        System.out.println(Arrays.toString(randomData));
+        
         
         //save randomData to file
         String fileName = "randomData";
         dg.SaveDataToFile(randomData , fileName);
         
+        System.out.println(" randomData : " + Arrays.toString(randomData));
+        
         //sort the random data
         Integer[] sortedData = new Integer[dataSize];
         sortedData = dg.sortData(randomData);
+        
+        
+        System.out.println("randomData after sorting " + Arrays.toString(randomData));
         
         //save sortedData to file
         fileName = "sortedData";
@@ -55,8 +59,6 @@ public class SortingTechniques {
         
         //read random data from file 
         
-        
-        
         ArrayList<Integer> randomD =  new ArrayList<Integer>();
         
         ReadData read = new ReadData();
@@ -65,30 +67,30 @@ public class SortingTechniques {
         randomD = read.readData(fileName);
         
         System.out.println("randomD" + randomD);
-//        
-//        
-//        // sort random data with linear sort
-//        
-//        LinearSort l = new LinearSort();
-//        
-//        ArrayList<Integer> linearSortedD = new ArrayList<Integer>();
-//        
-//        linearSortedD = l.linearSort(randomD);
-//        
-////        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
-//                                            //isn't java pass by copy ??!
-//        System.out.println("linearSortedD" + linearSortedD);
-//        
-//        // sort random data with bubble sort
-//        
-//        BubbleSort b = new BubbleSort();
-//        
-//        ArrayList<Integer> bubbleSortedD = new ArrayList<Integer>();
-//        
-//        bubbleSortedD = b.bubbleSort(randomD);
-//        
-//        System.out.println("bubbleSortedD" + bubbleSortedD);
-//        
+        
+        
+        // sort random data with linear sort
+        
+        LinearSort l = new LinearSort();
+        
+        ArrayList<Integer> linearSortedD = new ArrayList<Integer>();
+        
+        linearSortedD = l.linearSort(randomD);
+        
+//        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
+                                            //isn't java pass by copy ??!
+        System.out.println("linearSortedD" + linearSortedD);
+        
+        // sort random data with bubble sort
+        
+        BubbleSort b = new BubbleSort();
+        
+        ArrayList<Integer> bubbleSortedD = new ArrayList<Integer>();
+        
+        bubbleSortedD = b.bubbleSort(randomD);
+        
+        System.out.println("bubbleSortedD" + bubbleSortedD);
+        
         // sort random data with quick sort
         
         QuickSort q = new QuickSort();

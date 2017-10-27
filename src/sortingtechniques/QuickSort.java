@@ -27,19 +27,12 @@ public class QuickSort {
             
             do {                
                 do {i++;} while (data.get(i)< pivot);
-                
-//                System.out.println("data.get(j)"+ data.get(j));
-//                System.out.println("pivot"+ pivot);
-//                System.out.println("j" + j); 
-                                                       ////  مرة تشتغل و مرة لأ !!!!
                 do {j--;} while (j>=0 && data.get(j)> pivot);
                 if (i < j) {
                     int temp = data.get(i);
                     data.set(i, data.get(j));
                     data.set(j, temp);
-                    
-                }
-                
+                }  
             } while (i < j);
             
             data.set(high, data.get(i));  // Put the pivot back in the middle
@@ -48,9 +41,7 @@ public class QuickSort {
             quickSort(data, low, i - 1);// Recursive sort left list
             quickSort(data, i + 1 ,high);// Recursive sort right list
         }
-        
         sortedData = data;
-        
         return sortedData ; 
     }
     

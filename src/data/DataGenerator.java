@@ -85,10 +85,12 @@ public class DataGenerator {
         
         Integer[] sortedData = new Integer[dataSize] ;
         
-        //sort data
-        Arrays.sort(data);
-      
         sortedData = data;
+        
+        //sort data
+        Arrays.sort(sortedData);
+      
+        
         
         return sortedData;
     }

@@ -22,6 +22,8 @@ public class LinearSort {
         int dataSize = data.size();
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
+        sortedData = data;
+        
 
         int outer, inner, min;
         for (outer = 0; outer < dataSize - 1; outer++) { // outer counts down 
@@ -30,7 +32,7 @@ public class LinearSort {
         
         for(inner = outer + 1; inner < dataSize; inner++){
         
-        if(data.get(inner) < data.get(min)){
+        if(sortedData.get(inner) < sortedData.get(min)){
         
         min = inner;
         }
@@ -39,22 +41,21 @@ public class LinearSort {
         // a[min] is least among a[outer]..a[a.length - 1] 
        
         
-        int temp = data.get(outer);
+        int temp = sortedData.get(outer);
 
-        data.set(outer, data.get(min));
+        sortedData.set(outer, sortedData.get(min));
 
-        data.set(min, temp);
+        sortedData.set(min, temp);
         
         // Invariant: for all i <= outer, if i < j then a[i] <= a[j] 
         }        
-//        System.out.println(data);
+//        System.out.println(sortedData);
 
 //        System.out.println(sortedData);
 
-        sortedData = data;
-        
         return sortedData;
     }
+    
     
     
 }

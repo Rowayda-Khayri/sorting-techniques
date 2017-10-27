@@ -60,4 +60,12 @@ public class ReadData {
         return data;
     }
     
+    
+    public ArrayList<Integer> readSpecificSize(ArrayList<Integer> data, int size){
+        
+        
+        
+        return data;
+    }
+    
 }
