@@ -96,12 +96,11 @@ public class SortingTechniques {
         ArrayList<Integer> quickSortedD = new ArrayList<Integer>();
         
         int low = 0;
-//        System.out.println(randomD.size());
         int high = (randomD.size()) -1 ;
         
         System.out.println("high :  " + high);
         
-//        quickSortedD = q.quickSort(randomD ,low, high); // low is the first element and high is the last element in the arraylist
+        quickSortedD = q.quickSort(randomD ,low, high); // low is the first element and high is the last element in the arraylist
         
         System.out.println("quickSortedD" + quickSortedD);
         
