@@ -30,8 +30,9 @@ public class QuickSort {
                 
 //                System.out.println("data.get(j)"+ data.get(j));
 //                System.out.println("pivot"+ pivot);
-                System.out.println("j" + j); //////////////????!!!! this make it build successfully !!
-                do {j--;} while (data.get(j)> pivot);
+//                System.out.println("j" + j); 
+                                                       ////  مرة تشتغل و مرة لأ !!!!
+                do {j--;} while (j>=0 && data.get(j)> pivot);
                 if (i < j) {
                     int temp = data.get(i);
                     data.set(i, data.get(j));

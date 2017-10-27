@@ -65,38 +65,39 @@ public class SortingTechniques {
         randomD = read.readData(fileName);
         
         System.out.println("randomD" + randomD);
-        
-        
-        // sort random data with linear sort
-        
-        LinearSort l = new LinearSort();
-        
-        ArrayList<Integer> linearSortedD = new ArrayList<Integer>();
-        
-        linearSortedD = l.linearSort(randomD);
-        
-//        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
-                                            //isn't java pass by copy ??!
-        System.out.println("linearSortedD" + linearSortedD);
-        
-        // sort random data with bubble sort
-        
-        BubbleSort b = new BubbleSort();
-        
-        ArrayList<Integer> bubbleSortedD = new ArrayList<Integer>();
-        
-        bubbleSortedD = b.bubbleSort(randomD);
-        
-        System.out.println("bubbleSortedD" + bubbleSortedD);
-        
+//        
+//        
+//        // sort random data with linear sort
+//        
+//        LinearSort l = new LinearSort();
+//        
+//        ArrayList<Integer> linearSortedD = new ArrayList<Integer>();
+//        
+//        linearSortedD = l.linearSort(randomD);
+//        
+////        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
+//                                            //isn't java pass by copy ??!
+//        System.out.println("linearSortedD" + linearSortedD);
+//        
+//        // sort random data with bubble sort
+//        
+//        BubbleSort b = new BubbleSort();
+//        
+//        ArrayList<Integer> bubbleSortedD = new ArrayList<Integer>();
+//        
+//        bubbleSortedD = b.bubbleSort(randomD);
+//        
+//        System.out.println("bubbleSortedD" + bubbleSortedD);
+//        
         // sort random data with quick sort
         
         QuickSort q = new QuickSort();
         
         ArrayList<Integer> quickSortedD = new ArrayList<Integer>();
         
+        System.out.println("randomD before q s "+ randomD );
         int low = 0;
-        int high = (randomD.size()) -1 ;
+        int high = randomD.size() -1 ;
         
         System.out.println("high :  " + high);
         
