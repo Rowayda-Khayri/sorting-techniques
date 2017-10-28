@@ -17,6 +17,10 @@ public class BubbleSort {
            
         int dataSize = data.size();
         
+        int comparisons =0;
+        
+        int swaps = 0 ;
+        
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
         
@@ -26,17 +30,24 @@ public class BubbleSort {
             
             for(int i = 0;i <dataSize -1; i++){
             
+                comparisons ++ ;
+                
                 if(sortedData.get(i) > sortedData.get( i + 1)){
                 
                     int temp = sortedData.get(i);
                     
                     sortedData.set(i , sortedData.get(i + 1));
                     sortedData.set(i + 1, temp);
+                
+                    swaps ++ ;
+                    
                     
                 }
             }
         }
         
+        System.out.println("Bubble S swaps :   " + swaps);
+        System.out.println("Bubble S comparisons :   " + comparisons);
         
         return sortedData;
     }

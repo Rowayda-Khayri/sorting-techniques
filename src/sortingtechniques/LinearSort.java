@@ -18,7 +18,6 @@ public class LinearSort {
     public ArrayList<Integer> linearSort(ArrayList<Integer> data){
         
         
-//        System.out.println(Arrays.toString(data));
         int dataSize = data.size();
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
@@ -27,11 +26,18 @@ public class LinearSort {
         ArrayList<Integer> Data2 = new ArrayList<Integer>();
 
         int outer, inner, min;
+        
+        int comparisons =0;
+        
+        int swaps = 0 ;
+        
         for (outer = 0; outer < dataSize - 1; outer++) { // outer counts down 
         
         min = outer;
         
         for(inner = outer + 1; inner < dataSize; inner++){
+        
+        comparisons ++;
         
         if(sortedData.get(inner) < sortedData.get(min)){
         
@@ -48,11 +54,16 @@ public class LinearSort {
 
         sortedData.set(min, temp);
         
+        swaps++;
+        
         // Invariant: for all i <= outer, if i < j then a[i] <= a[j] 
         }        
 //        System.out.println(sortedData);
 
 //        System.out.println(sortedData);
+
+        System.out.println("Linear S swaps :   " + swaps);
+        System.out.println("Linear S comparisons :   " + comparisons);
 
         return sortedData;
     }
