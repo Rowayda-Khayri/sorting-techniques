@@ -87,6 +87,14 @@ public class SortingTechniques {
         System.out.println("linearSortedD" + linearSortedD);
        
         
+        //read random data from file  to overwrite the old data in randomD tha's sorted now for unknown reason 
+        
+        dataSizeToRead = 1500;
+        fileName = "randomData";
+        randomD = read.readData(fileName , dataSizeToRead);
+        
+        System.out.println("randomD" + randomD);
+        
         // sort random data with bubble sort
         
         BubbleSort b = new BubbleSort();
