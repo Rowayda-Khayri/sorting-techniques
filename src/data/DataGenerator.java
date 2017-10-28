@@ -31,11 +31,9 @@ public class DataGenerator {
         //generate 1500 random numbers between 0 and 9999
         for (counter = 0; counter < size  ; counter++) {
             
-            System.out.println("size : " + size);
-            
             int rand  = randomnum.nextInt(range);
         
-            generatedData.set(counter, rand);
+            generatedData.add(rand);
 
         }
         
