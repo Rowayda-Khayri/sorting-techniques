@@ -23,6 +23,7 @@ public class ReadData {
         // This will reference one line at a time
         String line = null ;
 
+        
         try {
             // FileReader reads text files in the default encoding.
             FileReader fileReader = 

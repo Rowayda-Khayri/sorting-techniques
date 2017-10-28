@@ -20,15 +20,12 @@ public class DataGenerator {
 //    public String[] generateRandomData(){
     public ArrayList<Integer> generateRandomData(int size, int range){
         
-        
-        System.out.println("size : " + size);
         int counter ;
         Random randomnum = new Random();
         
         
         ArrayList<Integer> generatedData = new ArrayList<Integer>();
         
-        //generate 1500 random numbers between 0 and 9999
         for (counter = 0; counter < size  ; counter++) {
             
             int rand  = randomnum.nextInt(range);
