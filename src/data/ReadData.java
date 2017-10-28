@@ -56,9 +56,15 @@ public class ReadData {
             // ex.printStackTrace();
         }
         
+        List<Integer> specificSizeList = new ArrayList<Integer>(data.subList(0,size)); ///not size - 1
+
+        ArrayList<Integer> specificSizeArrayList = new ArrayList<Integer>(specificSizeList);
+        
+//        System.out.println("specificSizeList : " + specificSizeList);
+//        System.out.println("specificSizeArrayList : " + specificSizeArrayList);
         
         
-        return data;
+        return specificSizeArrayList;
     }
     
     

@@ -22,13 +22,15 @@ public class SortingTechniques {
         //create object to use mehods in class 
         DataGenerator dg = new DataGenerator();
         
-//        int dataSize = 1500;
+        int dataSize = 1500;
+        int dataRange = 9999;
+        
         
         //create integer arraylist to contain returned random data
         ArrayList<Integer> randomData = new ArrayList<Integer>();
         
         //generate 1500 random numbers between 0 and 9999
-        randomData = dg.generateRandomData(1500,9999);
+        randomData = dg.generateRandomData(dataSize,dataRange);
         
         
         
@@ -61,12 +63,13 @@ public class SortingTechniques {
         
         //read random data from file 
         
+        int dataSizeToRead = 1500;
         ArrayList<Integer> randomD =  new ArrayList<Integer>();
         
         ReadData read = new ReadData();
         
         fileName = "randomData";
-        randomD = read.readData(fileName , 1500);
+        randomD = read.readData(fileName , dataSizeToRead);
         
         System.out.println("randomD" + randomD);
         
