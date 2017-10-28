@@ -24,6 +24,7 @@ public class LinearSort {
         
         sortedData = data;
         
+        ArrayList<Integer> Data2 = new ArrayList<Integer>();
 
         int outer, inner, min;
         for (outer = 0; outer < dataSize - 1; outer++) { // outer counts down 

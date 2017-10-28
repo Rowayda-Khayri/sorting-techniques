@@ -82,9 +82,10 @@ public class SortingTechniques {
         
         linearSortedD = l.linearSort(randomD);
         
-//        System.out.println(randomD); /************?????????? why is it changed to be sorted ??!! 
+        System.out.println("randomD after linear sort " + randomD); /*****??????? why is it changed to be sorted ??!! **/
                                             //isn't java pass by copy ??!
         System.out.println("linearSortedD" + linearSortedD);
+       
         
         // sort random data with bubble sort
         
@@ -102,7 +103,7 @@ public class SortingTechniques {
         
         ArrayList<Integer> quickSortedD = new ArrayList<Integer>();
         
-        System.out.println("randomD before q s "+ randomD );
+        System.out.println("randomD after bubble sort "+ randomD );
         int low = 0;
         int high = randomD.size() -1 ;
         

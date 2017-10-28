@@ -19,22 +19,24 @@ public class BubbleSort {
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
+        
+        sortedData = data;
+        
         for(int pass = 0 ; pass< dataSize; pass++){
             
             for(int i = 0;i <dataSize -1; i++){
             
-                if(data.get(i) > data.get( i + 1)){
+                if(sortedData.get(i) > sortedData.get( i + 1)){
                 
-                    int temp = data.get(i);
+                    int temp = sortedData.get(i);
                     
-                    data.set(i , data.get(i + 1));
-                    data.set(i + 1, temp);
+                    sortedData.set(i , sortedData.get(i + 1));
+                    sortedData.set(i + 1, temp);
                     
                 }
             }
         }
         
-        sortedData = data;
         
         return sortedData;
     }
