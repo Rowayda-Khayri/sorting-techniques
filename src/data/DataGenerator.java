@@ -18,19 +18,24 @@ public class DataGenerator {
     
     
 //    public String[] generateRandomData(){
-    public Integer[] generateRandomData(){
+    public ArrayList<Integer> generateRandomData(int size, int range){
         
+        
+        System.out.println("size : " + size);
         int counter ;
         Random randomnum = new Random();
         
-        Integer[] generatedData = new Integer[1500];
+        
+        ArrayList<Integer> generatedData = new ArrayList<Integer>();
         
         //generate 1500 random numbers between 0 and 9999
-        for (counter = 0; counter < 1500; counter++) {
+        for (counter = 0; counter < size  ; counter++) {
             
-            int rand  = randomnum.nextInt(9999);
+            System.out.println("size : " + size);
+            
+            int rand  = randomnum.nextInt(range);
         
-            generatedData[counter]  = rand;
+            generatedData.set(counter, rand);
 
         }
         
@@ -38,7 +43,7 @@ public class DataGenerator {
 
     } 
     
-    public void SaveDataToFile(Integer[] data, String fileName){
+    public void SaveDataToFile(ArrayList<Integer> data, String fileName){
         
         // The name of the file to create
         fileName = fileName + ".txt";
@@ -58,10 +63,10 @@ public class DataGenerator {
                 new BufferedWriter(fileWriter);
 
             
-            for(int i = 0;i<data.length;i++){
+            for(int i = 0;i<data.size();i++){
                 
                 //write value 
-                bufferedWriter.write(data[i] + delimiter);
+                bufferedWriter.write(data.get(i) + delimiter);
             }
             
             //  close file
@@ -79,32 +84,35 @@ public class DataGenerator {
         
     }
     
-    public Integer[] sortData(Integer[] data){
+    public ArrayList<Integer> sortData(ArrayList<Integer> data){
         
-        int dataSize = data.length;
+//        int dataSize = data.length;
         
-        Integer[] sortedData = new Integer[dataSize] ;
+        ArrayList<Integer> sortedData = new ArrayList<Integer>() ;
         
         sortedData = data;
         
         //sort data
-        Arrays.sort(sortedData);
+//        Arrays.sort(sortedData);
+        Collections.sort(sortedData);
       
         
         
         return sortedData;
     }
     
-    public Integer[] inverselySortData(Integer[] data){
+    public ArrayList<Integer> inverselySortData(ArrayList<Integer> data){
         
-        int dataSize = data.length;
+//        int dataSize = data.length;
         
-        Integer[] inverselySortedData = new Integer[dataSize] ;
-        
-        //inversely sort data
-        Collections.reverse(Arrays.asList(data));
+        ArrayList<Integer> inverselySortedData = new ArrayList<Integer>() ;
         
         inverselySortedData = data;
+        
+        //inversely sort data
+        Collections.reverse(inverselySortedData);
+        
+        
         
         return inverselySortedData;
     }

@@ -22,11 +22,13 @@ public class SortingTechniques {
         //create object to use mehods in class 
         DataGenerator dg = new DataGenerator();
         
-        int dataSize = 1500;
+//        int dataSize = 1500;
         
-        //create int array to contain returned random data
-        Integer[] randomData = new Integer[dataSize];
-        randomData = dg.generateRandomData();
+        //create integer arraylist to contain returned random data
+        ArrayList<Integer> randomData = new ArrayList<Integer>();
+        
+        //generate 1500 random numbers between 0 and 9999
+        randomData = dg.generateRandomData(1500,9999);
         
         
         
@@ -34,21 +36,21 @@ public class SortingTechniques {
         String fileName = "randomData";
         dg.SaveDataToFile(randomData , fileName);
         
-        System.out.println(" randomData : " + Arrays.toString(randomData));
+        System.out.println(" randomData : " + randomData);
         
         //sort the random data
-        Integer[] sortedData = new Integer[dataSize];
+        ArrayList<Integer> sortedData = new ArrayList<Integer>();
         sortedData = dg.sortData(randomData);
         
         
-        System.out.println("randomData after sorting " + Arrays.toString(randomData));
+        System.out.println("randomData after sorting " + randomData);
         
         //save sortedData to file
         fileName = "sortedData";
         dg.SaveDataToFile(sortedData , fileName);
         
         //inversely sort the random data
-        Integer[] inverselySortedData = new Integer[dataSize];
+        ArrayList<Integer> inverselySortedData = new ArrayList<Integer>();
         inverselySortedData = dg.inverselySortData(randomData);
         
         //save inverselySortedData to file
@@ -64,7 +66,7 @@ public class SortingTechniques {
         ReadData read = new ReadData();
         
         fileName = "randomData";
-        randomD = read.readData(fileName);
+        randomD = read.readData(fileName , 1500);
         
         System.out.println("randomD" + randomD);
         

@@ -13,7 +13,7 @@ import java.util.*;
  */
 public class ReadData {
     
-    public ArrayList<Integer> readData(String fileName){
+    public ArrayList<Integer> readData(String fileName , int size){
         
         ArrayList<Integer> data = new ArrayList<Integer>();
         
@@ -61,11 +61,6 @@ public class ReadData {
     }
     
     
-    public ArrayList<Integer> readSpecificSize(ArrayList<Integer> data, int size){
-        
-        
-        
-        return data;
-    }
+    
     
 }
