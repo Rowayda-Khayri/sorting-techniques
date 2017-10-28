@@ -117,7 +117,7 @@ public class SortingTechniques {
         
         System.out.println("high :  " + high);
         
-        quickSortedD = q.quickSort(randomD ,low, high); // low is the first element and high is the last element in the arraylist
+        quickSortedD = q.quickSort(randomD ,low, high , 0 , 0); // low is the first element and high is the last element in the arraylist
         
         System.out.println("quickSortedD" + quickSortedD);
         

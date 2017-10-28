@@ -13,12 +13,12 @@ import java.util.ArrayList;
  */
 public class QuickSort {
     
-    public ArrayList<Integer> quickSort(ArrayList<Integer> data , int low , int high){
+    public ArrayList<Integer> quickSort(ArrayList<Integer> data , int low , int high , int comparisons ,int swaps ){
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
-        int comparisons =0 ;
-        int swaps = 0 ;
+//        int comparisons =0 ;
+//        int swaps = 0 ;
         
         if(low< high) {
             int pivotIndex = low; // Assume first element is the pivot
@@ -48,8 +48,8 @@ public class QuickSort {
             data.set(i, pivot);
             swaps ++ ;
             
-            quickSort(data, low, i - 1);// Recursive sort left list
-            quickSort(data, i + 1 ,high);// Recursive sort right list
+            quickSort(data, low, i - 1 , comparisons , swaps);// Recursive sort left list
+            quickSort(data, i + 1 ,high ,comparisons , swaps);// Recursive sort right list
         }
         
         System.out.println("Quick S swaps :   " + swaps);
