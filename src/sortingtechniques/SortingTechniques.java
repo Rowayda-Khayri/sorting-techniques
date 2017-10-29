@@ -579,6 +579,55 @@ public class SortingTechniques {
         System.out.println("             ==========================================");
         
         
+        //Number of Interchanges of Entries / Random Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|          Number of Interchanges of Entries / Random Data          |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_Random_Size_3.swapsResult+"              "+ bubbleSortedData_Random_Size_3.swapsResult+"             "+ quickSortedData_Random_Size_3.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_Random_Size_2.swapsResult+"             "+ bubbleSortedData_Random_Size_2.swapsResult+"             "+ quickSortedData_Random_Size_2.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_Random_Size_1.swapsResult+"             "+ bubbleSortedData_Random_Size_1.swapsResult+"             "+ quickSortedData_Random_Size_1.swapsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+        
+        
+        
+        //Number of Interchanges of Entries / Sorted Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|          Number of Interchanges of Entries / Sorted Data          |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_Sorted_Size_3.swapsResult+"                  "+ bubbleSortedData_Sorted_Size_3.swapsResult+"             "+ quickSortedData_Sorted_Size_3.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_Sorted_Size_2.swapsResult+"                 "+ bubbleSortedData_Sorted_Size_2.swapsResult+"             "+ quickSortedData_Sorted_Size_2.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_Sorted_Size_1.swapsResult+"                 "+ bubbleSortedData_Sorted_Size_1.swapsResult+"             "+ quickSortedData_Sorted_Size_1.swapsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+        
+        
+        
+        //Number of Interchanges of Entries / Inversely Sorted Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|          Number of Interchanges of Entries / Inversely Sorted Data          |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_InverselySorted_Size_3.swapsResult+"                  "+ bubbleSortedData_InverselySorted_Size_3.swapsResult+"             "+ quickSortedData_InverselySorted_Size_3.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_InverselySorted_Size_2.swapsResult+"                 "+ bubbleSortedData_InverselySorted_Size_2.swapsResult+"             "+ quickSortedData_InverselySorted_Size_2.swapsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_InverselySorted_Size_1.swapsResult+"                 "+ bubbleSortedData_InverselySorted_Size_1.swapsResult+"             "+ quickSortedData_InverselySorted_Size_1.swapsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+        
+        
+        
+        
     }
     
 }
