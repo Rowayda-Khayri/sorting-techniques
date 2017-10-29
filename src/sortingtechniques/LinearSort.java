@@ -31,6 +31,9 @@ public class LinearSort {
         
         int swaps = 0 ;
         
+        //start calculating sorting runtime
+        long startTime = System.nanoTime();
+        
         for (outer = 0; outer < dataSize - 1; outer++) { // outer counts down 
         
         min = outer;
@@ -57,13 +60,16 @@ public class LinearSort {
         swaps++;
         
         // Invariant: for all i <= outer, if i < j then a[i] <= a[j] 
-        }        
-//        System.out.println(sortedData);
-
-//        System.out.println(sortedData);
+        }  
+        //the end time of sorting 
+        long endTime = System.nanoTime();
+        
+        long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
+        
 
         System.out.println("Linear S swaps :   " + swaps);
         System.out.println("Linear S comparisons :   " + comparisons);
+        System.out.println("Linear S runTime:   " + runTime);
 
         return sortedData;
     }

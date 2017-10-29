@@ -23,8 +23,10 @@ public class BubbleSort {
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
-        
         sortedData = data;
+        
+        //start calculating sorting runtime
+        long startTime = System.nanoTime();
         
         for(int pass = 0 ; pass< dataSize; pass++){
             
@@ -45,9 +47,15 @@ public class BubbleSort {
                 }
             }
         }
+        //the end time of sorting 
+        long endTime = System.nanoTime();
+        
+        long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
         
         System.out.println("Bubble S swaps :   " + swaps);
         System.out.println("Bubble S comparisons :   " + comparisons);
+        
+        System.out.println("Bubble S runTime:   " + runTime);
         
         return sortedData;
     }
