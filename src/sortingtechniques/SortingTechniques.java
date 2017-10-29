@@ -24,10 +24,17 @@ public class SortingTechniques {
         /*Generate Data And Save It To Files*/
         /*==================================*/
         
+        //define different dataSizes to be read from files to use on comparison
+                                
+        int dataSize_1 = 1500;
+        int dataSize_2 = 1000;
+        int dataSize_3 = 500;
+        
+        
         //create object to use methods in DataGenerator class 
         DataGenerator dg = new DataGenerator();
         
-        int dataSize = 1500;
+        int dataSize = dataSize_1;
         int dataRange = 9999;
         
         //create integer arraylist to contain returned random data
@@ -60,36 +67,69 @@ public class SortingTechniques {
         /*Read Data From Files*/
         /*====================*/
         
-        //read random data from file 
-        
-        int dataSizeToRead = 1500;
-        ArrayList<Integer> randomD =  new ArrayList<Integer>();
-        
         ReadData read = new ReadData(); // to access methods in ReadData class
         
-        fileName = "randomData";
-        randomD = read.readData(fileName , dataSizeToRead); // read this size from this file
         
-        //read sorted data from file 
+        //read  the first size of random data from file 
         
-        ArrayList<Integer> sortedD =  new ArrayList<Integer>();
+        ArrayList<Integer> randomData_Size_1 =  new ArrayList<Integer>();
         
-        fileName = "sortedData";
-        sortedD = read.readData(fileName , dataSizeToRead); // read this size from this file
+        randomData_Size_1 = read.readData("randomData" , dataSize_1); // read this size from this file
         
-        //read inversely sorted data from file 
+        //read  the second size of random data from file 
         
-        ArrayList<Integer> inverselySortedD =  new ArrayList<Integer>();
+        ArrayList<Integer> randomData_Size_2 =  new ArrayList<Integer>();
         
-        fileName = "inverselySortedData";
-        inverselySortedD = read.readData(fileName , dataSizeToRead); // read this size from this file
+        randomData_Size_2 = read.readData("randomData" , dataSize_2); // read this size from this file
+        
+        //read  the third size of random data from file 
+        
+        ArrayList<Integer> randomData_Size_3 =  new ArrayList<Integer>();
+        
+        randomData_Size_3 = read.readData("randomData" , dataSize_3); // read this size from this file
+        
+        /*******************************************************************************/
+        //read  the first size of sorted data from file 
+        
+        ArrayList<Integer> sortedData_Size_1=  new ArrayList<Integer>();
+        
+        sortedData_Size_1 = read.readData("sortedData" , dataSize_1); // read this size from this file
+        
+        //read  the second size of sorted data from file
+        
+        ArrayList<Integer> sortedData_Size_2=  new ArrayList<Integer>();
+        
+        sortedData_Size_2 = read.readData("sortedData" , dataSize_2); // read this size from this file
+        
+        //read  the third size of sorted data from file
+        
+        ArrayList<Integer> sortedData_Size_3=  new ArrayList<Integer>();
+        
+        sortedData_Size_3 = read.readData("sortedData" , dataSize_3); // read this size from this file
+        
+        /********************************************************************************/
+        //read the first size of inversely sorted data from file 
+        
+        ArrayList<Integer> inverselySortedData_Size_1 =  new ArrayList<Integer>();
+        
+        inverselySortedData_Size_1 = read.readData("inverselySortedData" , dataSize_1); // read this size from this file
+        
+        //read the second size of inversely sorted data from file 
+        
+        ArrayList<Integer> inverselySortedData_Size_2 =  new ArrayList<Integer>();
+        
+        inverselySortedData_Size_2 = read.readData("inverselySortedData" , dataSize_2); // read this size from this file
+        
+        //read the third size of inversely sorted data from file 
+        
+        ArrayList<Integer> inverselySortedData_Size_3 =  new ArrayList<Integer>();
+        
+        inverselySortedData_Size_3 = read.readData("inverselySortedData" , dataSize_3); // read this size from this file
         
         
                                 /*===========*/
                                 /* Sort Data */
                                 /*===========*/
-        
-                                
         
         /*==========================*/
         /*Sort Data with Linear Sort*/
@@ -101,9 +141,9 @@ public class SortingTechniques {
         
         Result linearSortedD = new Result(); // to hold all results returned from the sorting method
         
-        linearSortedD = l.linearSort(randomD); //call linearSorting method
+        linearSortedD = l.linearSort(randomData_Size_1); //call linearSorting method
         
-//        System.out.println("randomD after linear sort " + randomD); /*****??????? why is it changed to be sorted ??!! **/
+//        System.out.println("randomData_Size_1 after linear sort " + randomData_Size_1); /*****??????? why is it changed to be sorted ??!! **/
 //                                            //isn't java pass by copy ??!
 
         System.out.println("linearSort sorted data : " + linearSortedD.sortedData);
@@ -112,12 +152,12 @@ public class SortingTechniques {
         System.out.println("linearSort swaps : " + linearSortedD.swapsResult);
        
         /*******************************************************************************************************/
-        /*read random data from file  to overwrite the old data in randomD that's sorted now for unknown reason*/ 
+        /*read random data from file  to overwrite the old data in randomData_Size_1 that's sorted now for unknown reason*/ 
         /*******************************************************************************************************/
         
         dataSizeToRead = 1500;
         fileName = "randomData";
-        randomD = read.readData(fileName , dataSizeToRead);
+        randomData_Size_1 = read.readData(fileName , dataSizeToRead);
         
         
         /*==========================*/
@@ -131,7 +171,7 @@ public class SortingTechniques {
         
         Result bubbleSortedD = new Result(); // to hold all results returned from the sorting method
         
-        bubbleSortedD = b.bubbleSort(randomD); //call bubbleSorting method
+        bubbleSortedD = b.bubbleSort(randomData_Size_1); //call bubbleSorting method
         
         System.out.println("bubbleSort sorted data : " + bubbleSortedD.sortedData);
         System.out.println("bubbleSort run time : " + bubbleSortedD.runTimeResult);
@@ -139,12 +179,12 @@ public class SortingTechniques {
         System.out.println("bubbleSort swaps : " + bubbleSortedD.swapsResult);
         
         /*******************************************************************************************************/
-        /*read random data from file  to overwrite the old data in randomD that's sorted now for unknown reason*/ 
+        /*read random data from file  to overwrite the old data in randomData_Size_1 that's sorted now for unknown reason*/ 
         /*******************************************************************************************************/
         
         dataSizeToRead = 1500;
         fileName = "randomData";
-        randomD = read.readData(fileName , dataSizeToRead);
+        randomData_Size_1 = read.readData(fileName , dataSizeToRead);
         
         
         /*=========================*/
@@ -158,10 +198,10 @@ public class SortingTechniques {
         Result quickSortedD = new Result(); // to hold all results returned from the sorting method
         
         int low = 0;
-        int high = randomD.size() -1 ; //get the last element's index in the arraylist
+        int high = randomData_Size_1.size() -1 ; //get the last element's index in the arraylist
         
         // call quickSort method
-        quickSortedD = q.quickSort(randomD ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        quickSortedD = q.quickSort(randomData_Size_1 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
         
         
         System.out.println("quickSort sorted Data : " + quickSortedD.sortedData);

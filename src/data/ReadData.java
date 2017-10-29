@@ -17,7 +17,7 @@ public class ReadData {
         
         ArrayList<Integer> data = new ArrayList<Integer>();
         
-        // The name of the file to open.
+        // The name of the file to open
         fileName = fileName + ".txt";
 
         // This will reference one line at a time
