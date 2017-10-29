@@ -15,7 +15,7 @@ import java.util.*;
 public class LinearSort {
     
     
-    public ArrayList<Integer> linearSort(ArrayList<Integer> data){
+    public Result linearSort(ArrayList<Integer> data){
         
         
         int dataSize = data.size();
@@ -71,7 +71,18 @@ public class LinearSort {
         System.out.println("Linear S comparisons :   " + comparisons);
         System.out.println("Linear S runTime:   " + runTime);
 
-        return sortedData;
+        
+        // create Result instance to return all the required results
+        
+        Result result = new Result();
+        
+        result.comparisonsResult = comparisons;
+        result.swapsResult = swaps;
+        result.runTimeResult = runTime;
+        result.data = sortedData;
+        
+        return result;
+        
     }
     
     

@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class BubbleSort {
     
-    public ArrayList<Integer> bubbleSort(ArrayList<Integer> data){
+    public Result bubbleSort(ArrayList<Integer> data){
            
         int dataSize = data.size();
         
@@ -57,7 +57,17 @@ public class BubbleSort {
         
         System.out.println("Bubble S runTime:   " + runTime);
         
-        return sortedData;
+        // create Result instance to return all the required results
+        
+        Result result = new Result();
+        
+        result.comparisonsResult = comparisons;
+        result.swapsResult = swaps;
+        result.runTimeResult = runTime;
+        result.data = sortedData;
+        
+        return result;
+        
     }
     
     

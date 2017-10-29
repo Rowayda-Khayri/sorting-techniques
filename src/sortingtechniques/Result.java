@@ -4,15 +4,19 @@
  * and open the template in the editor.
  */
 package sortingtechniques;
+import java.util.*;
 
 /**
  *
  * @author row
  */
+
 public class Result {
     
-    int comparisons;
-    int swaps;
-    long runTime;
+    ArrayList<Integer> data = new ArrayList<Integer>();
+    int comparisonsResult;
+    int swapsResult;
+    long runTimeResult;
+    
     
 }
