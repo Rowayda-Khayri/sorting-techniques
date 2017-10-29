@@ -350,6 +350,7 @@ public class SortingTechniques {
                             /*=========================*/
                             
         QuickSort q = new QuickSort(); // to access methods in QuickSort class
+        int low = 0; // to use with all data ( random , sorted and inversely sorted )
         
         /*=============*/
         /* Random Data */
@@ -357,31 +358,102 @@ public class SortingTechniques {
         
         // sort the first size of random data with quick sort
         
-        Result quickSortedD = new Result(); // to hold all results returned from the sorting method
-        
-        int low = 0;
+        Result quickSortedData_Random_Size_1 = new Result(); // to hold all results returned from the sorting method
         int high = randomData_Size_1.size() -1 ; //get the last element's index in the arraylist
         
         // call quickSort method
-        quickSortedD = q.quickSort(randomData_Size_1 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        quickSortedData_Random_Size_1 = q.quickSort(randomData_Size_1 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /***********************************************************************************/
+        
+        // sort the second size of random data with quick sort
+        
+        Result quickSortedData_Random_Size_2 = new Result(); // to hold all results returned from the sorting method
+        high = randomData_Size_2.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_Random_Size_2 = q.quickSort(randomData_Size_2 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /************************************************************************************/
+        
+        // sort the third size of random data with quick sort
+        
+        Result quickSortedData_Random_Size_3  = new Result(); // to hold all results returned from the sorting method
+        high = randomData_Size_3.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_Random_Size_3 = q.quickSort(randomData_Size_3 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
         
         /*=============*/
         /* Sorted Data */
         /*=============*/
         
+        // sort the first size of sorted data with quick sort
+        
+        Result quickSortedData_Sorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        high = sortedData_Size_1.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_Sorted_Size_1 = q.quickSort(sortedData_Size_1 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /***********************************************************************************/
+        
+        // sort the second size of sorted data with quick sort
+        
+        Result quickSortedData_Sorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        high = sortedData_Size_2.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_Sorted_Size_2 = q.quickSort(sortedData_Size_2 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /************************************************************************************/
+        
+        // sort the third size of sorted data with quick sort
+        
+        Result quickSortedData_Sorted_Size_3  = new Result(); // to hold all results returned from the sorting method
+        high = sortedData_Size_3.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_Sorted_Size_3 = q.quickSort(sortedData_Size_3 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
         
         
         /*=======================*/
         /* Inversely Sorted Data */
         /*=======================*/
         
+        // sort the first size of inversely sorted data with quick sort
+        
+        Result quickSortedData_InverselySorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        high = inverselySortedData_Size_1.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_InverselySorted_Size_1 = q.quickSort(inverselySortedData_Size_1,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /***********************************************************************************/
+        
+        // sort the second size of inversely sorted data with quick sort
+        
+        Result quickSortedData_InverselySorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        high = inverselySortedData_Size_2.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_InverselySorted_Size_2 = q.quickSort(inverselySortedData_Size_2 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /************************************************************************************/
+        
+        // sort the third size of inversely sorted data with quick sort
+        
+        Result quickSortedData_InverselySorted_Size_3  = new Result(); // to hold all results returned from the sorting method
+        high = inverselySortedData_Size_3.size() -1 ; //get the last element's index in the arraylist
+        
+        // call quickSort method
+        quickSortedData_InverselySorted_Size_3 = q.quickSort(inverselySortedData_Size_3 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
         
         
-        
-        System.out.println("quickSort sorted Data : " + quickSortedD.sortedData);
-        System.out.println("quickSort run time : " + quickSortedD.runTimeResult);
-        System.out.println("quickSort comparisons : " + quickSortedD.runTimeResult);
-        System.out.println("quickSort swaps : " + quickSortedD.swapsResult);
+        System.out.println("quickSort sorted Data : " + quickSortedData_Random_Size_1.sortedData);
+        System.out.println("quickSort run time : " + quickSortedData_Random_Size_1.runTimeResult);
+        System.out.println("quickSort comparisons : " + quickSortedData_Random_Size_1.runTimeResult);
+        System.out.println("quickSort swaps : " + quickSortedData_Random_Size_1.swapsResult);
         
         
     }
