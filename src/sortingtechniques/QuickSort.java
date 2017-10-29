@@ -17,14 +17,11 @@ public class QuickSort {
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         
-//        int comparisons =0 ;
-//        int swaps = 0 ;
-        
         if(low< high) {
             int pivotIndex = low; // Assume first element is the pivot
             int pivot = data.get(low);// The pivot value
             data.set(pivotIndex, data.get(high));// Swap pivot with last item
-            swaps ++ ;
+//            swaps ++ ; //not real swap 
             data.set(high, pivot);
             int i = low - 1;
             int j = high;
