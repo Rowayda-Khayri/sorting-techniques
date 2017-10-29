@@ -190,11 +190,6 @@ public class SortingTechniques {
 //                                            //isn't java pass by copy ??!
         /************************************************************************************************/
         
-        System.out.println("linearSort sorted data : " + linearSortedData_Random_Size_1.sortedData);
-        System.out.println("linearSort run time : " + linearSortedData_Random_Size_1.runTimeResult);
-        System.out.println("linearSort comparisons : " + linearSortedData_Random_Size_1.comparisonsResult);
-        System.out.println("linearSort swaps : " + linearSortedData_Random_Size_1.swapsResult);
-       
         
         /*=======================*/
         /* Inversely Sorted Data */
@@ -315,11 +310,6 @@ public class SortingTechniques {
         
         bubbleSortedData_InverselySorted_Size_3 = b.bubbleSort(inverselySortedData_Size_3); //call bubbleSorting method
         
-        
-        System.out.println("bubbleSort sorted data : " + bubbleSortedData_Random_Size_1.sortedData);
-        System.out.println("bubbleSort run time : " + bubbleSortedData_Random_Size_1.runTimeResult);
-        System.out.println("bubbleSort comparisons : " + bubbleSortedData_Random_Size_1.comparisonsResult);
-        System.out.println("bubbleSort swaps : " + bubbleSortedData_Random_Size_1.swapsResult);
         
         /*===============================================================================*/
         /*===============================================================================*/
@@ -446,11 +436,6 @@ public class SortingTechniques {
         quickSortedData_InverselySorted_Size_3 = q.quickSort(inverselySortedData_Size_3 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
         
         
-        System.out.println("quickSort sorted Data : " + quickSortedData_Random_Size_1.sortedData);
-        System.out.println("quickSort run time : " + quickSortedData_Random_Size_1.runTimeResult);
-        System.out.println("quickSort comparisons : " + quickSortedData_Random_Size_1.runTimeResult);
-        System.out.println("quickSort swaps : " + quickSortedData_Random_Size_1.swapsResult);
-        
         /******************************************************************************************************/
         /******************************************************************************************************/
         
@@ -513,7 +498,7 @@ public class SortingTechniques {
         System.out.println("|     "+ dataSize_2+"     |         "+ linearSortedData_InverselySorted_Size_2.runTimeResult+"              "+ bubbleSortedData_InverselySorted_Size_2.runTimeResult+"                 "+ quickSortedData_InverselySorted_Size_3.runTimeResult+"       |");
         System.out.println("|     "+ dataSize_1+"     |         "+ linearSortedData_InverselySorted_Size_1.runTimeResult+"              "+ bubbleSortedData_InverselySorted_Size_1.runTimeResult+"                 "+ quickSortedData_InverselySorted_Size_3.runTimeResult+"       |");
         System.out.println("---------------------------------------------------------------------");
-       
+        System.out.println("\n");
         
         /*****====================================*****/
         /*****    Number of Comparisons Tables    *****/
@@ -558,7 +543,7 @@ public class SortingTechniques {
         
         System.out.println("\n");
         System.out.println("---------------------------------------------------------------------");
-        System.out.println("|                   Number of Comparisons / Inversely Sorted Data             |");
+        System.out.println("|         Number of Comparisons / Inversely Sorted Data             |");
         System.out.println("|-------------------------------------------------------------------|");
         System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
         System.out.println("|-------------------------------------------------------------------|");
@@ -566,7 +551,7 @@ public class SortingTechniques {
         System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_InverselySorted_Size_2.comparisonsResult+"          "+ bubbleSortedData_InverselySorted_Size_2.comparisonsResult+"             "+ quickSortedData_InverselySorted_Size_2.comparisonsResult+"      |");
         System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_InverselySorted_Size_1.comparisonsResult+"          "+ bubbleSortedData_InverselySorted_Size_1.comparisonsResult+"             "+ quickSortedData_InverselySorted_Size_1.comparisonsResult+"      |");
         System.out.println("---------------------------------------------------------------------");
-       
+        System.out.println("\n");
         
         
         
@@ -617,7 +602,7 @@ public class SortingTechniques {
         
         System.out.println("\n");
         System.out.println("---------------------------------------------------------------------");
-        System.out.println("|          Number of Interchanges of Entries / Inversely Sorted Data          |");
+        System.out.println("|    Number of Interchanges of Entries / Inversely Sorted Data      |");
         System.out.println("|-------------------------------------------------------------------|");
         System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
         System.out.println("|-------------------------------------------------------------------|");

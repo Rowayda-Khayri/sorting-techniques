@@ -44,6 +44,8 @@ public class BubbleSort {
                     int temp = sortedData.get(i);
                     
                     sortedData.set(i , sortedData.get(i + 1));
+                    swaps++;
+                    
                     sortedData.set(i + 1, temp);
                 
                     swaps ++ ;

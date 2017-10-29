@@ -42,9 +42,11 @@ public class QuickSort {
             int j = high;
             
             
-            do {                
-                do {i++;} while (sortedData.get(i)< pivot);
-                do {j--;} while (j>=0 && sortedData.get(j)> pivot);
+            do {  
+                comparisons ++ ;
+                do {i++;comparisons ++ ;} while (sortedData.get(i)< pivot);
+                do {j--;comparisons ++ ;} while (j>=0 && sortedData.get(j)> pivot);
+                
                 comparisons ++ ;
                 if (i < j) {
                     int temp = sortedData.get(i);

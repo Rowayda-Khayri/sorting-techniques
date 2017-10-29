@@ -58,7 +58,8 @@ public class LinearSort {
         int temp = sortedData.get(outer);
 
         sortedData.set(outer, sortedData.get(min));
-
+        swaps++;
+        
         sortedData.set(min, temp);
         
         swaps++;
