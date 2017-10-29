@@ -52,11 +52,6 @@ public class BubbleSort {
         
         long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
         
-        System.out.println("Bubble S swaps :   " + swaps);
-        System.out.println("Bubble S comparisons :   " + comparisons);
-        
-        System.out.println("Bubble S runTime:   " + runTime);
-        
         // create Result instance to return all the required results
         
         Result result = new Result();

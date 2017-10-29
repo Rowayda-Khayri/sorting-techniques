@@ -67,11 +67,6 @@ public class LinearSort {
         long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
         
 
-        System.out.println("Linear S swaps :   " + swaps);
-        System.out.println("Linear S comparisons :   " + comparisons);
-        System.out.println("Linear S runTime:   " + runTime);
-
-        
         // create Result instance to return all the required results
         
         Result result = new Result();
