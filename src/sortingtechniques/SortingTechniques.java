@@ -19,15 +19,16 @@ public class SortingTechniques {
      */
     public static void main(String[] args) {
         
-        //create object to use methods in class 
-        DataGenerator dg = new DataGenerator();
-        
-        int dataSize = 1500;
-        int dataRange = 9999;
         
         /*==================================*/
         /*Generate Data And Save It To Files*/
         /*==================================*/
+        
+        //create object to use methods in DataGenerator class 
+        DataGenerator dg = new DataGenerator();
+        
+        int dataSize = 1500;
+        int dataRange = 9999;
         
         //create integer arraylist to contain returned random data
         ArrayList<Integer> randomData = new ArrayList<Integer>();
@@ -42,7 +43,6 @@ public class SortingTechniques {
         //sort the random data
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
         sortedData = dg.sortData(randomData);
-        
         
         //save sortedData to file
         fileName = "sortedData";
@@ -65,21 +65,37 @@ public class SortingTechniques {
         int dataSizeToRead = 1500;
         ArrayList<Integer> randomD =  new ArrayList<Integer>();
         
-        ReadData read = new ReadData();
+        ReadData read = new ReadData(); // to access methods in ReadData class
         
         fileName = "randomData";
-        randomD = read.readData(fileName , dataSizeToRead);
+        randomD = read.readData(fileName , dataSizeToRead); // read this size from this file
         
         //read sorted data from file 
         
+        ArrayList<Integer> sortedD =  new ArrayList<Integer>();
+        
+        fileName = "sortedData";
+        sortedD = read.readData(fileName , dataSizeToRead); // read this size from this file
+        
         //read inversely sorted data from file 
         
+        ArrayList<Integer> inverselySortedD =  new ArrayList<Integer>();
+        
+        fileName = "inverselySortedData";
+        inverselySortedD = read.readData(fileName , dataSizeToRead); // read this size from this file
+        
+        
+                                /*===========*/
+                                /* Sort Data */
+                                /*===========*/
+        
+                                
         
         /*==========================*/
         /*Sort Data with Linear Sort*/
         /*==========================*/
         
-        // sort random data with linear sort
+        // sort random 1500 data with linear sort
         
         LinearSort l = new LinearSort(); // to access methods in LinearSort class
         
