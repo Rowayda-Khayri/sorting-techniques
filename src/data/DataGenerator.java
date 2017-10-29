@@ -67,7 +67,6 @@ public class DataGenerator {
             
             //  close file
             bufferedWriter.close();
-            System.out.println("Saved");
         }
         catch(IOException ex) {
             System.out.println(

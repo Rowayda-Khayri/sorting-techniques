@@ -223,11 +223,6 @@ public class SortingTechniques {
 //                                            //isn't java pass by copy ??!
         /************************************************************************************************/
         
-        System.out.println("linearSort sorted data : " + linearSortedData_Random_Size_1.sortedData);
-        System.out.println("linearSort run time : " + linearSortedData_Random_Size_1.runTimeResult);
-        System.out.println("linearSort comparisons : " + linearSortedData_Random_Size_1.comparisonsResult);
-        System.out.println("linearSort swaps : " + linearSortedData_Random_Size_1.swapsResult);
-       
         /*===============================================================================*/
         /*===============================================================================*/
         
@@ -454,6 +449,134 @@ public class SortingTechniques {
         System.out.println("quickSort run time : " + quickSortedData_Random_Size_1.runTimeResult);
         System.out.println("quickSort comparisons : " + quickSortedData_Random_Size_1.runTimeResult);
         System.out.println("quickSort swaps : " + quickSortedData_Random_Size_1.swapsResult);
+        
+        /******************************************************************************************************/
+        /******************************************************************************************************/
+        
+                            /*****=======================*****/
+                            /*****=======================*****/
+                            /*****        Outputs        *****/
+                            /*****=======================*****/
+                            /*****=======================*****/
+        
+                                /*****==============*****/
+                                /*****    Tables    *****/
+                                /*****==============*****/  
+        
+        /*****=======================*****/
+        /*****    Run Time Tables    *****/
+        /*****=======================*****/  
+        
+        System.out.println("                      ==================");
+        System.out.println("                        Run Time Tables ");
+        System.out.println("                      ==================");        
+        
+        //Run Time / Random Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                      Run Time / Random Data                       |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |         "+ linearSortedData_Random_Size_3.runTimeResult+"               "+ bubbleSortedData_Random_Size_3.runTimeResult+"                 "+ quickSortedData_Random_Size_3.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_2+"     |         "+ linearSortedData_Random_Size_2.runTimeResult+"              "+ bubbleSortedData_Random_Size_2.runTimeResult+"                 "+ quickSortedData_Random_Size_2.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_1+"     |         "+ linearSortedData_Random_Size_1.runTimeResult+"              "+ bubbleSortedData_Random_Size_1.runTimeResult+"                 "+ quickSortedData_Random_Size_1.runTimeResult+"       |");
+        System.out.println("---------------------------------------------------------------------");
+        
+        
+        //Run Time / Sorted Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                      Run Time / Sorted Data                       |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |         "+ linearSortedData_Sorted_Size_3.runTimeResult+"               "+ bubbleSortedData_Sorted_Size_3.runTimeResult+"                 "+ quickSortedData_Sorted_Size_3.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_2+"     |         "+ linearSortedData_Sorted_Size_2.runTimeResult+"              "+ bubbleSortedData_Sorted_Size_2.runTimeResult+"                 "+ quickSortedData_Sorted_Size_2.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_1+"     |         "+ linearSortedData_Sorted_Size_1.runTimeResult+"              "+ bubbleSortedData_Sorted_Size_1.runTimeResult+"                 "+ quickSortedData_Sorted_Size_1.runTimeResult+"       |");
+        System.out.println("---------------------------------------------------------------------");
+       
+        //Run Time / Inversely Sorted Data Table
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                      Run Time / Inversely Sorted Data             |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |         "+ linearSortedData_InverselySorted_Size_3.runTimeResult+"               "+ bubbleSortedData_InverselySorted_Size_3.runTimeResult+"                 "+ quickSortedData_InverselySorted_Size_3.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_2+"     |         "+ linearSortedData_InverselySorted_Size_2.runTimeResult+"              "+ bubbleSortedData_InverselySorted_Size_2.runTimeResult+"                 "+ quickSortedData_InverselySorted_Size_3.runTimeResult+"       |");
+        System.out.println("|     "+ dataSize_1+"     |         "+ linearSortedData_InverselySorted_Size_1.runTimeResult+"              "+ bubbleSortedData_InverselySorted_Size_1.runTimeResult+"                 "+ quickSortedData_InverselySorted_Size_3.runTimeResult+"       |");
+        System.out.println("---------------------------------------------------------------------");
+       
+        
+        /*****====================================*****/
+        /*****    Number of Comparisons Tables    *****/
+        /*****====================================*****/
+        
+        
+        System.out.println("             ==============================");
+        System.out.println("              Number of Comparisons Tables ");
+        System.out.println("             ==============================");
+        
+        
+        //Number of Comparisons / Random Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                   Number of Comparisons / Random Data             |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_Random_Size_3.comparisonsResult+"           "+ bubbleSortedData_Random_Size_3.comparisonsResult+"             "+ quickSortedData_Random_Size_3.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_Random_Size_2.comparisonsResult+"          "+ bubbleSortedData_Random_Size_2.comparisonsResult+"             "+ quickSortedData_Random_Size_2.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_Random_Size_1.comparisonsResult+"          "+ bubbleSortedData_Random_Size_1.comparisonsResult+"             "+ quickSortedData_Random_Size_1.comparisonsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+        
+        
+        //Number of Comparisons / Sorted Data Table
+        
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                   Number of Comparisons / Sorted Data             |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_Sorted_Size_3.comparisonsResult+"           "+ bubbleSortedData_Sorted_Size_3.comparisonsResult+"             "+ quickSortedData_Sorted_Size_3.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_Sorted_Size_2.comparisonsResult+"          "+ bubbleSortedData_Sorted_Size_2.comparisonsResult+"             "+ quickSortedData_Sorted_Size_2.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_Sorted_Size_1.comparisonsResult+"          "+ bubbleSortedData_Sorted_Size_1.comparisonsResult+"             "+ quickSortedData_Sorted_Size_1.comparisonsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+       
+        //Number of Comparisons / Inversely Sorted Data Table
+        
+        System.out.println("\n");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("|                   Number of Comparisons / Inversely Sorted Data             |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     Size     |   Linear Sort   |   Bubble Sort   |   Quick Sort   |");
+        System.out.println("|-------------------------------------------------------------------|");
+        System.out.println("|     "+ dataSize_3+"      |      "+ linearSortedData_InverselySorted_Size_3.comparisonsResult+"           "+ bubbleSortedData_InverselySorted_Size_3.comparisonsResult+"             "+ quickSortedData_InverselySorted_Size_3.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_2+"     |      "+ linearSortedData_InverselySorted_Size_2.comparisonsResult+"          "+ bubbleSortedData_InverselySorted_Size_2.comparisonsResult+"             "+ quickSortedData_InverselySorted_Size_2.comparisonsResult+"      |");
+        System.out.println("|     "+ dataSize_1+"     |      "+ linearSortedData_InverselySorted_Size_1.comparisonsResult+"          "+ bubbleSortedData_InverselySorted_Size_1.comparisonsResult+"             "+ quickSortedData_InverselySorted_Size_1.comparisonsResult+"      |");
+        System.out.println("---------------------------------------------------------------------");
+       
+        
+        
+        
+        /*****================================================*****/
+        /*****    Number of Interchanges of Entries Tables    *****/
+        /*****================================================*****/
+        
+        
+        System.out.println("             ==========================================");
+        System.out.println("              Number of Interchanges of Entries Tables ");
+        System.out.println("             ==========================================");
         
         
     }
