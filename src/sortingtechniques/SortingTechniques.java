@@ -228,19 +228,32 @@ public class SortingTechniques {
         System.out.println("linearSort comparisons : " + linearSortedData_Random_Size_1.comparisonsResult);
         System.out.println("linearSort swaps : " + linearSortedData_Random_Size_1.swapsResult);
        
+        /*===============================================================================*/
+        /*===============================================================================*/
+        
         /*******************************************************************************************************/
         /*read random data from file  to overwrite the old data in randomData_Size_1 that's sorted now for unknown reason*/ 
         /*******************************************************************************************************/
         
-        dataSizeToRead = 1500;
-        fileName = "randomData";
-        randomData_Size_1 = read.readData(fileName , dataSizeToRead);
+        //read  the first size of random data from file 
+        randomData_Size_1 = read.readData("randomData" , dataSize_1); // read this size from this file
         
+        //read  the second size of random data from file 
+        randomData_Size_2 = read.readData("randomData" , dataSize_2); // read this size from this file
         
-        /*==========================*/
-        /*Sort Data with Bubble Sort*/
-        /*==========================*/
+        //read  the third size of random data from file 
+        randomData_Size_3 = read.readData("randomData" , dataSize_3); // read this size from this file
         
+        /*==============================================================================*/
+        /*==============================================================================*/
+        
+                                /*==========================*/
+                                /*Sort Data with Bubble Sort*/
+                                /*==========================*/
+        
+        /*=============*/
+        /* Random Data */
+        /*=============*/
         
         // sort random data with bubble sort
         
@@ -250,23 +263,46 @@ public class SortingTechniques {
         
         bubbleSortedD = b.bubbleSort(randomData_Size_1); //call bubbleSorting method
         
+        /*=============*/
+        /* Sorted Data */
+        /*=============*/
+        
+        /*=======================*/
+        /* Inversely Sorted Data */
+        /*=======================*/
+        
         System.out.println("bubbleSort sorted data : " + bubbleSortedD.sortedData);
         System.out.println("bubbleSort run time : " + bubbleSortedD.runTimeResult);
         System.out.println("bubbleSort comparisons : " + bubbleSortedD.comparisonsResult);
         System.out.println("bubbleSort swaps : " + bubbleSortedD.swapsResult);
         
+        /*===============================================================================*/
+        /*===============================================================================*/
+        
         /*******************************************************************************************************/
         /*read random data from file  to overwrite the old data in randomData_Size_1 that's sorted now for unknown reason*/ 
         /*******************************************************************************************************/
         
-        dataSizeToRead = 1500;
-        fileName = "randomData";
-        randomData_Size_1 = read.readData(fileName , dataSizeToRead);
+        //read  the first size of random data from file 
+        randomData_Size_1 = read.readData("randomData" , dataSize_1); // read this size from this file
+        
+        //read  the second size of random data from file 
+        randomData_Size_2 = read.readData("randomData" , dataSize_2); // read this size from this file
+        
+        //read  the third size of random data from file 
+        randomData_Size_3 = read.readData("randomData" , dataSize_3); // read this size from this file
+        
+        /*==============================================================================*/
+        /*==============================================================================*/
         
         
-        /*=========================*/
-        /*Sort Data with Quick Sort*/
-        /*=========================*/
+                            /*=========================*/
+                            /*Sort Data with Quick Sort*/
+                            /*=========================*/
+        
+        /*=============*/
+        /* Random Data */
+        /*=============*/
         
         // sort random data with quick sort
         
@@ -279,6 +315,18 @@ public class SortingTechniques {
         
         // call quickSort method
         quickSortedD = q.quickSort(randomData_Size_1 ,low, high); // low is the first element's index and high is the last element's index in the arraylist
+        
+        /*=============*/
+        /* Sorted Data */
+        /*=============*/
+        
+        
+        
+        /*=======================*/
+        /* Inversely Sorted Data */
+        /*=======================*/
+        
+        
         
         
         System.out.println("quickSort sorted Data : " + quickSortedD.sortedData);
