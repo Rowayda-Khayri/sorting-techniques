@@ -72,7 +72,7 @@ public class QuickSort {
         result.comparisonsResult = comparisons;
         result.swapsResult = swaps;
         result.runTimeResult = runTime;
-        result.data = sortedData;
+        result.sortedData = sortedData;
         
         return result;
         

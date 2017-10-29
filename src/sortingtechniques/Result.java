@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Result {
     
-    ArrayList<Integer> data = new ArrayList<Integer>();
+    ArrayList<Integer> sortedData = new ArrayList<Integer>();
     int comparisonsResult;
     int swapsResult;
     long runTimeResult;
