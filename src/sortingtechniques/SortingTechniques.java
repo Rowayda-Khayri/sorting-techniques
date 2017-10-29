@@ -131,25 +131,102 @@ public class SortingTechniques {
                                 /* Sort Data */
                                 /*===========*/
         
-        /*==========================*/
-        /*Sort Data with Linear Sort*/
-        /*==========================*/
-        
-        // sort random 1500 data with linear sort
+                            /*==========================*/
+                            /*Sort Data with Linear Sort*/
+                            /*==========================*/
         
         LinearSort l = new LinearSort(); // to access methods in LinearSort class
+
+        /*=============*/
+        /* Random Data */
+        /*=============*/
         
-        Result linearSortedD = new Result(); // to hold all results returned from the sorting method
+        // sort the first size of random data with linear sort
+
+        Result linearSortedData_Random_Size_1 = new Result(); // to hold all results returned from the sorting method
         
-        linearSortedD = l.linearSort(randomData_Size_1); //call linearSorting method
+        linearSortedData_Random_Size_1 = l.linearSort(randomData_Size_1); //call linearSorting method
         
+        // sort the second size of random data with linear sort
+
+        Result linearSortedData_Random_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_Random_Size_2 = l.linearSort(randomData_Size_2); //call linearSorting method
+        
+        // sort the third size of random data with linear sort
+
+        Result linearSortedData_Random_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_Random_Size_3 = l.linearSort(randomData_Size_3); //call linearSorting method
+        
+        
+        /*=============*/
+        /* Sorted Data */
+        /*=============*/
+        
+        
+        // sort the first size of sorted data with linear sort
+
+        Result linearSortedData_Sorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_Sorted_Size_1 = l.linearSort(sortedData_Size_1); //call linearSorting method
+        
+        // sort the second size of sorted data with linear sort
+
+        Result linearSortedData_Sorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_Sorted_Size_2 = l.linearSort(sortedData_Size_2); //call linearSorting method
+        
+        // sort the third size of sorted data with linear sort
+
+        Result linearSortedData_Sorted_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_Sorted_Size_3 = l.linearSort(sortedData_Size_3); //call linearSorting method
+        
+        
+        /************************************************************************************************/
 //        System.out.println("randomData_Size_1 after linear sort " + randomData_Size_1); /*****??????? why is it changed to be sorted ??!! **/
 //                                            //isn't java pass by copy ??!
+        /************************************************************************************************/
+        
+        System.out.println("linearSort sorted data : " + linearSortedData_Random_Size_1.sortedData);
+        System.out.println("linearSort run time : " + linearSortedData_Random_Size_1.runTimeResult);
+        System.out.println("linearSort comparisons : " + linearSortedData_Random_Size_1.comparisonsResult);
+        System.out.println("linearSort swaps : " + linearSortedData_Random_Size_1.swapsResult);
+       
+        
+        /*=======================*/
+        /* Inversely Sorted Data */
+        /*=======================*/
+        
+        // sort the first size of inversely sorted data with linear sort
 
-        System.out.println("linearSort sorted data : " + linearSortedD.sortedData);
-        System.out.println("linearSort run time : " + linearSortedD.runTimeResult);
-        System.out.println("linearSort comparisons : " + linearSortedD.comparisonsResult);
-        System.out.println("linearSort swaps : " + linearSortedD.swapsResult);
+        Result linearSortedData_InverselySorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_InverselySorted_Size_1 = l.linearSort(inverselySortedData_Size_1); //call linearSorting method
+        
+        // sort the second size of inversely sorted data with linear sort
+
+        Result linearSortedData_InverselySorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_InverselySorted_Size_2 = l.linearSort(inverselySortedData_Size_2); //call linearSorting method
+        
+        // sort the third size of inversely sorted data with linear sort
+
+        Result linearSortedData_InverselySorted_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        linearSortedData_InverselySorted_Size_3 = l.linearSort(inverselySortedData_Size_3); //call linearSorting method
+        
+        
+        /************************************************************************************************/
+//        System.out.println("randomData_Size_1 after linear sort " + randomData_Size_1); /*****??????? why is it changed to be sorted ??!! **/
+//                                            //isn't java pass by copy ??!
+        /************************************************************************************************/
+        
+        System.out.println("linearSort sorted data : " + linearSortedData_Random_Size_1.sortedData);
+        System.out.println("linearSort run time : " + linearSortedData_Random_Size_1.runTimeResult);
+        System.out.println("linearSort comparisons : " + linearSortedData_Random_Size_1.comparisonsResult);
+        System.out.println("linearSort swaps : " + linearSortedData_Random_Size_1.swapsResult);
        
         /*******************************************************************************************************/
         /*read random data from file  to overwrite the old data in randomData_Size_1 that's sorted now for unknown reason*/ 
