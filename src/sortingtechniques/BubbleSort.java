@@ -8,11 +8,16 @@ package sortingtechniques;
 import java.util.ArrayList;
 
 /**
- *
+ * Bubble Sort Algorithm
  * @author row
  */
 public class BubbleSort {
     
+    /**
+     * Sort the passed data with Bubble Sort Algorithm
+     * @author row
+     * @return Object from Result class that contains run time (in milliseconds), # of comparisons and # of swaps
+     */
     public Result bubbleSort(ArrayList<Integer> data){
            
         int dataSize = data.size();

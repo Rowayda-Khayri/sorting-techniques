@@ -8,11 +8,15 @@ import java.io.*;
 import java.util.*;
 
 /**
- *
+ *Read data from files
  * @author row
  */
 public class ReadData {
     
+    /**
+     *Read specific data size from the given file
+     * @author row
+     */
     public ArrayList<Integer> readData(String fileName , int size){
         
         ArrayList<Integer> data = new ArrayList<Integer>();
@@ -35,9 +39,7 @@ public class ReadData {
 
             while((line = bufferedReader.readLine()) != null) {
                 
-//                data = append(data, line);
                 data.add(Integer.parseInt(line));
-//                System.out.println(line);
             }   
 
             // Always close files.
@@ -52,16 +54,12 @@ public class ReadData {
             System.out.println(
                 "Error reading file '" 
                 + fileName + "'");                  
-            // Or we could just do this: 
-            // ex.printStackTrace();
+            
         }
         
         List<Integer> specificSizeList = new ArrayList<Integer>(data.subList(0,size)); ///not size - 1
 
         ArrayList<Integer> specificSizeArrayList = new ArrayList<Integer>(specificSizeList);
-        
-//        System.out.println("specificSizeList : " + specificSizeList);
-//        System.out.println("specificSizeArrayList : " + specificSizeArrayList);
         
         
         return specificSizeArrayList;

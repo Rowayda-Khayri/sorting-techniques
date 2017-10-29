@@ -7,7 +7,7 @@ package sortingtechniques;
 import java.util.*;
 
 /**
- *
+ * Contains run time (in milliseconds), # of comparisons and # of swaps so that I can return more than 1 variable in any sorting method
  * @author row
  */
 

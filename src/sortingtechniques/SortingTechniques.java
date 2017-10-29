@@ -9,12 +9,13 @@ import data.*;
 import java.util.*;
 
 /**
- *
+ *Main Class
  * @author row
  */
 public class SortingTechniques {
 
     /**
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {

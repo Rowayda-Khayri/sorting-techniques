@@ -9,12 +9,16 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- *
+ *  Linear Sort Algorithm
  * @author row
  */
 public class LinearSort {
     
-    
+    /**
+     * Sort the passed data with Linear Sort Algorithm
+     * @author row
+     * @return Object from Result class that contains run time (in milliseconds), # of comparisons and # of swaps
+     */
     public Result linearSort(ArrayList<Integer> data){
         
         

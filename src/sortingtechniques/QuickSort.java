@@ -8,7 +8,7 @@ package sortingtechniques;
 import java.util.ArrayList;
 
 /**
- *
+ * Quick Sort Algorithm
  * @author row
  */
 public class QuickSort {
@@ -17,6 +17,12 @@ public class QuickSort {
     int swaps  = 0 ;
     long runTime ;
     
+    
+    /**
+     * Sort the passed data with Quick Sort Algorithm
+     * @author row
+     * @return Object from Result class that contains run time (in milliseconds), # of comparisons and # of swaps
+     */
     public Result quickSort(ArrayList<Integer> data , int low , int high ){
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>();
@@ -30,7 +36,7 @@ public class QuickSort {
             int pivotIndex = low; // Assume first element is the pivot
             int pivot = sortedData.get(low);// The pivot value
             sortedData.set(pivotIndex, sortedData.get(high));// Swap pivot with last item
-//            swaps ++ ; //not real swap 
+
             sortedData.set(high, pivot);
             int i = low - 1;
             int j = high;

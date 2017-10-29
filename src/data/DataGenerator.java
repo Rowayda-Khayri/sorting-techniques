@@ -12,13 +12,15 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- *
+ *Generates random data, sort it and save it to files
  * @author row
  */
 public class DataGenerator {
     
-    
-//    public String[] generateRandomData(){
+     /**
+     *Generates random data with passed size and range
+     * @author row
+     */
     public ArrayList<Integer> generateRandomData(int size, int range){
         
         int counter ;
@@ -39,6 +41,10 @@ public class DataGenerator {
 
     } 
     
+    /**
+     *Saves given data to given file name
+     * @author row
+     */
     public void SaveDataToFile(ArrayList<Integer> data, String fileName){
         
         // The name of the file to create
@@ -79,26 +85,27 @@ public class DataGenerator {
         
     }
     
+    /**
+     *Sort passed data
+     * @author row
+     */
     public ArrayList<Integer> sortData(ArrayList<Integer> data){
-        
-//        int dataSize = data.length;
         
         ArrayList<Integer> sortedData = new ArrayList<Integer>() ;
         
         sortedData = data;
         
         //sort data
-//        Arrays.sort(sortedData);
         Collections.sort(sortedData);
       
-        
-        
         return sortedData;
     }
     
+    /**
+     *Inversely sort passed data
+     * @author row
+     */
     public ArrayList<Integer> inverselySortData(ArrayList<Integer> data){
-        
-//        int dataSize = data.length;
         
         ArrayList<Integer> inverselySortedData = new ArrayList<Integer>() ;
         
