@@ -251,30 +251,79 @@ public class SortingTechniques {
                                 /*Sort Data with Bubble Sort*/
                                 /*==========================*/
         
+        BubbleSort b = new BubbleSort(); // to access methods in BubbleSort class
+        
         /*=============*/
         /* Random Data */
         /*=============*/
         
-        // sort random data with bubble sort
+        // sort the first size of random data with bubble sort
         
-        BubbleSort b = new BubbleSort(); // to access methods in LinearSort class
+        Result bubbleSortedData_Random_Size_1 = new Result(); // to hold all results returned from the sorting method
         
-        Result bubbleSortedD = new Result(); // to hold all results returned from the sorting method
+        bubbleSortedData_Random_Size_1 = b.bubbleSort(randomData_Size_1); //call bubbleSorting method
         
-        bubbleSortedD = b.bubbleSort(randomData_Size_1); //call bubbleSorting method
+        // sort the second size of random data with bubble sort
+        
+        Result bubbleSortedData_Random_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_Random_Size_2 = b.bubbleSort(randomData_Size_2); //call bubbleSorting method
+        
+        // sort the third size of random data with bubble sort
+        
+        Result bubbleSortedData_Random_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_Random_Size_3 = b.bubbleSort(randomData_Size_3); //call bubbleSorting method
         
         /*=============*/
         /* Sorted Data */
         /*=============*/
         
+        // sort the first size of Sorted data with bubble sort
+        
+        Result bubbleSortedData_Sorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_Sorted_Size_1 = b.bubbleSort(sortedData_Size_1); //call bubbleSorting method
+        
+        // sort the second size of Sorted data with bubble sort
+        
+        Result bubbleSortedData_Sorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_Sorted_Size_2 = b.bubbleSort(sortedData_Size_2); //call bubbleSorting method
+        
+        // sort the third size of Sorted data with bubble sort
+        
+        Result bubbleSortedData_Sorted_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_Sorted_Size_3 = b.bubbleSort(sortedData_Size_3); //call bubbleSorting method
+        
         /*=======================*/
         /* Inversely Sorted Data */
         /*=======================*/
         
-        System.out.println("bubbleSort sorted data : " + bubbleSortedD.sortedData);
-        System.out.println("bubbleSort run time : " + bubbleSortedD.runTimeResult);
-        System.out.println("bubbleSort comparisons : " + bubbleSortedD.comparisonsResult);
-        System.out.println("bubbleSort swaps : " + bubbleSortedD.swapsResult);
+        // sort the first size of InverselySorted data with bubble sort
+        
+        Result bubbleSortedData_InverselySorted_Size_1 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_InverselySorted_Size_1 = b.bubbleSort(inverselySortedData_Size_1); //call bubbleSorting method
+        
+        // sort the second size of Inversely Sorted data with bubble sort
+        
+        Result bubbleSortedData_InverselySorted_Size_2 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_InverselySorted_Size_2 = b.bubbleSort(inverselySortedData_Size_2); //call bubbleSorting method
+        
+        // sort the third size of Inversely Sorted data with bubble sort
+        
+        Result bubbleSortedData_InverselySorted_Size_3 = new Result(); // to hold all results returned from the sorting method
+        
+        bubbleSortedData_InverselySorted_Size_3 = b.bubbleSort(inverselySortedData_Size_3); //call bubbleSorting method
+        
+        
+        System.out.println("bubbleSort sorted data : " + bubbleSortedData_Random_Size_1.sortedData);
+        System.out.println("bubbleSort run time : " + bubbleSortedData_Random_Size_1.runTimeResult);
+        System.out.println("bubbleSort comparisons : " + bubbleSortedData_Random_Size_1.comparisonsResult);
+        System.out.println("bubbleSort swaps : " + bubbleSortedData_Random_Size_1.swapsResult);
         
         /*===============================================================================*/
         /*===============================================================================*/
@@ -299,14 +348,14 @@ public class SortingTechniques {
                             /*=========================*/
                             /*Sort Data with Quick Sort*/
                             /*=========================*/
+                            
+        QuickSort q = new QuickSort(); // to access methods in QuickSort class
         
         /*=============*/
         /* Random Data */
         /*=============*/
         
-        // sort random data with quick sort
-        
-        QuickSort q = new QuickSort(); // to access methods in LinearSort class
+        // sort the first size of random data with quick sort
         
         Result quickSortedD = new Result(); // to hold all results returned from the sorting method
         
