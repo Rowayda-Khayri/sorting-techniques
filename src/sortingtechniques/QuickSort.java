@@ -44,24 +44,26 @@ public class QuickSort {
             
             do {  
                 comparisons ++ ;
-                do {i++;comparisons ++ ;} while (sortedData.get(i)< pivot);
-                do {j--;comparisons ++ ;} while (j>=0 && sortedData.get(j)> pivot);
+                do {i++;comparisons ++ ;} while (sortedData.get(i)< pivot && i <= high);
+                do {j--;comparisons ++ ;} while (j>=low && sortedData.get(j)> pivot);
                 
                 comparisons ++ ;
                 if (i < j) {
                     int temp = sortedData.get(i);
                     data.set(i, sortedData.get(j));
-                    swaps ++ ;
-                    sortedData.set(j, temp);
-                    swaps ++ ;
+                    if (!sortedData.get(i).equals(sortedData.get(j))) {
+                        swaps ++ ;
+                        sortedData.set(j, temp);
+                    }
+                    //swaps ++ ;
                 }  
             } while (i < j);
-            
-            sortedData.set(high, sortedData.get(i));  // Put the pivot back in the middle
-            swaps ++ ;
-            sortedData.set(i, pivot);
-            swaps ++ ;
-            
+            if (! sortedData.get(i).equals(sortedData.get(high))){
+                sortedData.set(high, sortedData.get(i));  // Put the pivot back in the middle
+                swaps ++ ;
+                sortedData.set(i, pivot);
+                //swaps ++ ;
+            }
             quickSort(sortedData, low, i - 1 );// Recursive sort left list
             quickSort(sortedData, i + 1 ,high );// Recursive sort right list
         }
@@ -69,7 +71,7 @@ public class QuickSort {
         //the end time of sorting 
         long endTime = System.nanoTime();
         
-        runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
+        runTime = (endTime - startTime) ;  //divide by 1000000 to get milliseconds.
         
         
         

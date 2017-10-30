@@ -54,7 +54,7 @@ public class LinearSort {
         }
         // a[min] is least among a[outer]..a[a.length - 1] 
        
-        
+      // if value(outer) != value(min)  
         int temp = sortedData.get(outer);
 
         sortedData.set(outer, sortedData.get(min));
@@ -62,14 +62,14 @@ public class LinearSort {
         
         sortedData.set(min, temp);
         
-        swaps++;
+    //    swaps++;
         
         // Invariant: for all i <= outer, if i < j then a[i] <= a[j] 
         }  
         //the end time of sorting 
         long endTime = System.nanoTime();
         
-        long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
+        long runTime = (endTime - startTime) ;  //divide by 1000000 to get milliseconds.
         
 
         // create Result instance to return all the required results

@@ -48,7 +48,7 @@ public class BubbleSort {
                     
                     sortedData.set(i + 1, temp);
                 
-                    swaps ++ ;
+//                    swaps ++ ;
                     
                     
                 }
@@ -57,7 +57,7 @@ public class BubbleSort {
         //the end time of sorting 
         long endTime = System.nanoTime();
         
-        long runTime = (endTime - startTime) / 1000000;  //divide by 1000000 to get milliseconds.
+        long runTime = (endTime - startTime) ;  //divide by 1000000 to get milliseconds.
         
         // create Result instance to return all the required results
         
