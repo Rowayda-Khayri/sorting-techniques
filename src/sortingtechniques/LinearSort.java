@@ -49,18 +49,22 @@ public class LinearSort {
         if(sortedData.get(inner) < sortedData.get(min)){
         
         min = inner;
-        }
+        
         // Invariant: for all i, if outer <= i <= inner, then a[min] <= a[i]  
-        }
-        // a[min] is least among a[outer]..a[a.length - 1] 
-       
-      // if value(outer) != value(min)  
+        
+        // if value(outer) != value(min)  
         int temp = sortedData.get(outer);
 
         sortedData.set(outer, sortedData.get(min));
         swaps++;
         
         sortedData.set(min, temp);
+        }
+        
+        }
+        // a[min] is least among a[outer]..a[a.length - 1] 
+       
+      
         
     //    swaps++;
         
